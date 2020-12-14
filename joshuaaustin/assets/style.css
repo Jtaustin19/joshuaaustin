@@ -1,8 +1,8 @@
 :root {
-    --primary-color: white;
+    --primary-color: lightgrey;
     --secondary-color: black;
     --tertiary-color: blue;
-    --quarternary-color: grey;
+    --quarternary-color: darkgrey;
 }
 
 * {
@@ -70,3 +70,163 @@ header nav ul li a {
     background-position: center;
     height: 600px;
 }
+/* HERO STYLE ENDS */
+
+/* SECTION TITLE STYLES START */
+.section-title {
+    margin: 30px auto 20px auto;
+    text-align: center;
+    width: 30%;
+    font-size: 38px;
+    font-weight: 750;
+    color: var(--secondary-color);
+    padding-bottom: 18px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+/* SECTION TITLE STYLES END */
+
+/* "ABOUT ME" STYLES START */
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bio img {
+    background-image: url(../assets/images/Profile.JPEG);
+    background-size: cover;
+    background-position: 80%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 10%;
+}
+
+.bio-text {
+    width: 35%;
+    color: var(--secondary-color);
+}
+
+.bio-text p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+/* "ABOUT ME" STYLES END */
+
+/* "MY WORK" STYLES START */
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.repo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    background-size: cover;
+    min-height: 150px;
+    width: auto;
+    box-shadow: 0 0 7px black;
+}
+
+.repo a {
+    padding: 7px 28px 7px 28px;
+    border: 3px solid var(--quarternary-color);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--quarternary-color);
+    background: var(--primary-color);
+    margin: auto 0 13px 0;
+    opacity: 0.8;
+}
+
+.repo:hover {
+    box-shadow: 0 0 13px black;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.repo a:hover {
+    color: var(--primary-color);
+    background-color: var(--quarternary-color);
+    border-color: var(--secondary-color);
+    opacity: 1;
+}
+
+.run-buddy {
+    background-image: url(../assets/images/run-buddy.jpg);
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.horiseon {
+    background-image: url(../assets/images/Horiseon.png);
+}
+
+.box3 {
+    background-image: url(../assets/images/JS.PNG.png);
+}
+
+.box4 {
+    background-image: url(../assets/images/API-1.png);
+}
+
+.box5 {
+    background-image: url(../assets/images/API-2.png);
+}
+
+.box6 {
+    background-image: url(../assets/images/API-3.png);
+}
+/* "MY WORK" STYLES END */
+
+/* "CONTACT ME" STYLES START */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.contact p {
+    width: 35%;
+    line-height: 1.5;
+    text-align: right;
+    margin-right: 10%;
+}
+
+.contact ul {
+    list-style: none;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.contact ul a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+/* "CONTACT ME" STYLES START */
+
+/* FOOTER STYLES START */
+footer {
+    display: flex;
+    justify-content: left;
+    margin-top: 40px;
+    border-top: 3px solid var(--tertiary-color);
+    padding: 20px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+/* FOOTER STYLES END */
