@@ -32,7 +32,7 @@ header{
 }
 
 header h1{
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -53,9 +53,9 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 18px;
 }
 /* HEADER/NAV STYLES END */
 
@@ -64,7 +64,7 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-image: url(../assets/images/hero-bg.PNG);
     background-size: cover;
     background-position: center;
@@ -223,7 +223,7 @@ header nav ul li a {
 footer {
     display: flex;
     justify-content: left;
-    margin-top: 40px;
+    margin-top: 30px;
     border-top: 3px solid var(--tertiary-color);
     padding: 20px;
     background: var(--secondary-color);
