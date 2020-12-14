@@ -1,0 +1,72 @@
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --tertiary-color: blue;
+    --quarternary-color: grey;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--primary-color);
+}
+
+/* HEADER/NAV STYLES START */
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--secondary-color);
+    background-size: cover;
+    padding: 20px;
+    border-bottom: 3px solid var(--tertiary-color);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header h1, header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav {
+    margin: auto 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+/* HEADER/NAV STYLES END */
+
+/* HERO STYLES START */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/images/hero-bg.PNG);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
